@@ -1,0 +1,23 @@
+export PATH=$PATH:~/bin
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+
+#==================={ ALIAS }====================
+
+#ls shows typeinfo
+alias ls='ls -F'
+
+#use neovim instead of built-in vim
+alias vim='nvim'
+
+#use zshrc to open the shell settings file in vim
+alias zshrc='nvim ~/.config/shell/zshrc'
+
+#start eclimd daemon with command 'eclimd'
+alias eclimd='/Applications/Eclipse.app/Contents/Eclipse/eclimd'
+
+#================={ VARIABLES }==================
+
+PS1="%B[%~]%b$> "
+ECLIPSE_HOME=/Applications/Eclipse.app/Contents/Eclipse
