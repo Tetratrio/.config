@@ -70,10 +70,10 @@ inoremap jk <esc>
 inoremap <C-u> <esc>BviWUEa
 
 " maps { to add a closing bracket and enter insert mode inbetween
-inoremap { {}<esc>i
+"inoremap { {}<esc>i
 
 " maps { ENTER to create c-style block
-inoremap {<cr> {<cr>}<esc>O
+"inoremap {<cr> {<cr>}<esc>O
 
 
 

@@ -82,20 +82,20 @@ filetype plugin indent on
 
 "How is tab visually displayed? Sets number of columns a tab
 "is displayed as. A coloumn has the same width as a space
-setlocal tabstop=4
+setlocal tabstop=2
 
 "Expands tabs in insertmode into the apropriate number of spaces
 setlocal expandtab
 
 "Set shiftwidth to control how many columns text is indented with
 "the reindent operations (<< and >>) and automatic C-style indentation.
-setlocal shiftwidth=4
+setlocal shiftwidth=2
 
 "Round the indent to multiple of shiftwidth when using commands on a line
 setlocal shiftround
 
 "Sets how many columns are inserted when you hit tab in insert mode
-setlocal softtabstop=4
+setlocal softtabstop=2
 
 
 "====================================================

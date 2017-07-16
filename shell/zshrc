@@ -1,6 +1,22 @@
-export PATH=$PATH:~/bin
+#include ~/bin for selfmade stuff
+#include ~/Library/Python/2.7/bin for pip installed stuff using --user
+export PATH=/usr/local/lib/python2.7/site-packages:$PATH:~/bin:~/Library/Python/2.7/bin
+
+#include ~/Library/Python/2.7/lib/python/site-packages
+#export PYTHONPATH=~/Library/Python/2.7/lib/python/site-packages:$PYTHONPATH
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH:~/Library/Python/2.7/lib/python/site-packages
+
+
+#================={ ZSH STUFF }==================
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+#zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+autoload -U compinit
+compinit
+setopt completeinword
 
 
 #==================={ ALIAS }====================
@@ -9,7 +25,8 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 alias ls='ls -F'
 
 #use neovim instead of built-in vim
-alias vim='nvim'
+#alias vim='nvim'
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 #use zshrc to open the shell settings file in vim
 alias zshrc='nvim ~/.config/shell/zshrc'
@@ -17,7 +34,10 @@ alias zshrc='nvim ~/.config/shell/zshrc'
 #start eclimd daemon with command 'eclimd'
 alias eclimd='/Applications/Eclipse.app/Contents/Eclipse/eclimd'
 
+#python = python 2.7. We dont want no python 3 in dis bitch
+alias python='python2.7'
+
 #================={ VARIABLES }==================
 
 PS1="%B[%~]%b$> "
-ECLIPSE_HOME=/Applications/Eclipse.app/Contents/Eclipse
+ECLIPSE_HOME="/Applications/Eclipse.app/Contents/Eclipse"
