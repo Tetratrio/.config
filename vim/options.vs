@@ -6,6 +6,8 @@
 "if has ('unix')
 "    set t_Co=256
 "endif
+"
+set shortmess=a
 
 " TODO
 scriptencoding utf-8

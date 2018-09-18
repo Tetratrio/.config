@@ -22,7 +22,7 @@ Plugin 'gmarik/vundle.vim'
 " C-language autocompletion. Also some extra stuff like
 " python completion. Includes lots of stuff that has to
 " do with autocompletion, such as marking syntax errors.
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 
 " Best snippet plugin
 " Plugin 'SirVer/ultisnips'
